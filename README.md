@@ -9,7 +9,7 @@ Instalar components
 `npm install styled-components`
 
 React navigation
-`npm install @react-navigation/native`
+``npm install @react-navigation/native``
 
 
 [reactnavigation](https://reactnavigation.org/docs/getting-started)
