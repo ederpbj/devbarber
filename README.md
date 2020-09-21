@@ -38,15 +38,20 @@ Permission
 ou
 `npm install --save react-native-permissions`
 
-Conectar cellar via wifi (fail)
-``
+Conectar celular via wifi (fail)
+```
 adb kill-server
+
 adb tcpip 5555
+
 adb connect 192.168.0.14:5555
+
 adb devices
 
-``
+```
+
 Permissão de localização
+
 app/main/AndroidManifest.xml
 
 <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
