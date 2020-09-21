@@ -38,6 +38,29 @@ Permission
 ou
 `npm install --save react-native-permissions`
 
-X
+Conectar cellar via wifi (fail)
 ``
-tempo parado: 24:42
+adb kill-server
+adb tcpip 5555
+adb connect 192.168.0.14:5555
+adb devices
+
+``
+Permissão de localização
+app/main/AndroidManifest.xml
+
+<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+Swiper
+`npm install react-native-swiper`
+
+SVG (permite trabalhar com formato svg)
+`npm install react-native-svg`
+
+SVG Transformer
+`npm install react-native-svg-transformer`
+
+Ir para configurações do transformer
+[svg-transformer](https://github.com/kristerkari/react-native-svg-transformer)
+
+tempo parado: 30:00
