@@ -16,10 +16,11 @@ React navigation
 [reactnavigation](https://reactnavigation.org/docs/getting-started)
 
 Dependencia
+```
+npm install react-native-reanimated react-native-gesture-handler react-native-screens react-native-safe-area-context @react-native-community/masked-view
+```
 
-`npm install react-native-reanimated react-native-gesture-handler react-native-screens react-native-safe-area-context @react-native-community/masked-view`
-
-[Teste Reste](https://resttesttest.com/)
+[Test Rest](https://resttesttest.com/)
 
 [Stack](https://reactnavigation.org/docs/stack-navigator)
 `npm install @react-navigation/stack`
