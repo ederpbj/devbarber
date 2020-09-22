@@ -87,4 +87,4 @@ Criando SVG com Inskscape
 
 [Youtube](https://www.youtube.com/watch?v=ef7bR76KdGg&ab_channel=JMDesignGr%C3%A1fico)
 
-tempo parado: 30:00
+tempo parado: 1:05:30
