@@ -84,5 +84,7 @@ Prototipação com Adobe XD
 Criando SVG com Inskscape
 
 [Tutorial inkscape](https://inkscape.org/pt-br/aprender/)
+
 [Youtube](https://www.youtube.com/watch?v=ef7bR76KdGg&ab_channel=JMDesignGr%C3%A1fico)
+
 tempo parado: 30:00

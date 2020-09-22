@@ -7,3 +7,7 @@ export const Container = styled.SafeAreaView`
   justify-content: center;
   align-items: center;
 `;
+
+export const LoginIcon = styled.ActivityIndicator`
+  margin-top: 50px;  
+`;
