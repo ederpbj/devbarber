@@ -15,6 +15,7 @@ React navigation
 
 [reactnavigation](https://reactnavigation.org/docs/getting-started)
 
+
 Dependencia
 ```
 npm install react-native-reanimated react-native-gesture-handler react-native-screens react-native-safe-area-context @react-native-community/masked-view
@@ -78,4 +79,10 @@ yarn eslint --init
 ```
 [Config eslint](https://medium.com/@sutil.edu/configura%C3%A7%C3%B5es-do-eslint-com-prettier-para-react-native-458cb098c3c8)
 
+Prototipação com Adobe XD
+
+Criando SVG com Inskscape
+
+[Tutorial inkscape](https://inkscape.org/pt-br/aprender/)
+[Youtube](https://www.youtube.com/watch?v=ef7bR76KdGg&ab_channel=JMDesignGr%C3%A1fico)
 tempo parado: 30:00
