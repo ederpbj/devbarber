@@ -69,4 +69,13 @@ SVG Transformer
 Ir para configurações do transformer
 [svg-transformer](https://github.com/kristerkari/react-native-svg-transformer)
 
+Iniciando com eslint
+```
+yarn add eslint -D
+
+yarn eslint --init
+
+```
+[Config eslint](https://medium.com/@sutil.edu/configura%C3%A7%C3%B5es-do-eslint-com-prettier-para-react-native-458cb098c3c8)
+
 tempo parado: 30:00
