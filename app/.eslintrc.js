@@ -1,20 +1,15 @@
-{
-  "extends": "airbnb",
-  "parser": "babel-eslint",
-  "env": {
-    "browser": true
+module.exports = {
+  env: {
+    es2021: true,
   },
-  "plugins": ["react"],
-  "rules": {
-    "react/jsx-filename-extension": [
-      2,
-      {
-        "extensions": [".js", ".jsx"]
-      }
-    ],
-    "react/forbid-prop-types": [0],
-    "react/require-default-props": [0],
-    "global-require": [0],
-    "no-underscore-dangle": [0]
-  }
-}
+  extends: ['plugin:react/recommended', 'airbnb'],
+  parserOptions: {
+    ecmaFeatures: {
+      jsx: true,
+    },
+    ecmaVersion: 12,
+    sourceType: 'module',
+  },
+  plugins: ['react', 'react-native'],
+  rules: {},
+};
