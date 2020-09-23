@@ -50,6 +50,7 @@
     "lint-staged": "^10.4.0",
     "metro-react-native-babel-preset": "^0.63.0",
     "prettier": "^2.1.2",
+    "react-native-vscode-settings": "^0.0.8",
     "react-test-renderer": "16.13.1"
   },
   "jest": {

@@ -89,4 +89,7 @@ Criando SVG com Inskscape
 
 [Youtube](https://www.youtube.com/watch?v=ef7bR76KdGg&ab_channel=JMDesignGr%C3%A1fico)
 
+[vscode settings](https://www.npmjs.com/package/react-native-vscode-settings)
+
+
 tempo parado: 1:05:30

@@ -1,0 +1,98 @@
+{
+  "workbench.iconTheme": "material-icon-theme",
+  "files.autoSave": "afterDelay",
+  "[javascript]": {
+      "editor.formatOnPaste": true,
+      "editor.formatOnSave": true,
+      "editor.defaultFormatter": "msjsdiag.vscode-react-native",
+    //   "editor.defaultFormatter": "rvest.vs-code-prettier-eslint",
+    // Extra
+    "flow.useNPMPackagedFlow": true,
+    "javascript.validate.enable": false,
+    "javascript.format.enable": false,
+    "vsicons.projectDetection.autoReload": true,
+    "editor.renderWhitespace": "boundary",
+      
+  },
+  "git.autofetch": true,
+  "editor.suggestSelection": "first",
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+  "files.exclude": {
+      "**/.classpath": true,
+      "**/.project": true,
+      "**/.settings": true,
+      "**/.factorypath": true
+  },
+  "[json]": {
+      "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "explorer.confirmDelete": false,
+  "git.enableSmartCommit": true,
+  "editor.renderControlCharacters": true,
+  "editor.renderWhitespace": "all",
+  "[typescript]": {
+      "editor.defaultFormatter": "vscode.typescript-language-features"
+  },
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "window.zoomLevel": 1,
+  "kite.showWelcomeNotificationOnStartup": false,
+  "workbench.colorTheme": "Dracula",
+  "eslint.codeAction.disableRuleComment": {
+      
+  },
+  "git.confirmSync": false,
+  "workbench.sideBar.location": "left",
+  "workbench.activityBar.visible": true,
+  "editor.minimap.enabled": true,
+  "[javascriptreact]": {
+      "editor.autoIndent": "full",
+  "editor.codeLens": true
+  },
+  "eslint.alwaysShowStatus": true,
+  "editor.fontSize": 13,
+  "editor.tabSize": 2,
+  "eslint.format.enable": true,
+  "eslint.probe": [
+      "javascript",
+      "javascriptreact",
+      "typescript",
+      "typescriptreact",
+      "html",
+      "markdown"
+  ],
+  "eslint.runtime": "",
+  "files.associations": {
+  
+  },
+  "eslint.options": {
+  
+  },
+  "editor.autoClosingBrackets": "always",
+  "editor.quickSuggestions": true,
+  "editor.wordWrap": "on",
+  "workbench.editorAssociations": [
+  
+  ],
+  "diffEditor.codeLens": true,
+  "editor.fontLigatures": null,
+  "prettier.eslintIntegration": true,
+  "files.exclude": {
+      "**/*.git": true,
+      "**/*.expo": true,
+    //   ".*": true,
+      "**/*.DS_Store": true,
+      "node_modules/": false,
+      ".*": false,
+    "ios/": false,
+    "*.lo*": false,
+    "*.json": false,
+    "LICENSE": false,
+    "android/": false,
+    "__tests__": false,
+
+  },
+  "editor.formatOnSave": true,
+  "workbench.statusBar.visible": false,
+  "editor.codeActionsOnSave": null
+}
