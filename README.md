@@ -4,6 +4,8 @@ Aplicativo para barbearia
 
 [Live 10](https://alunos.b7web.com.br/curso/lives/app-de-agendamento-para-barbeiros)
 
+[Git do projeto](https://github.com/ederpbj/devbarber)
+
 Iniciando Projeto
 `npx react-native init app`
 

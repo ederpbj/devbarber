@@ -8,6 +8,6 @@ export const Container = styled.SafeAreaView`
   align-items: center;
 `;
 
-export const LoginIcon = styled.ActivityIndicator`
+export const LoadingIcon = styled.ActivityIndicator`
   margin-top: 50px;  
 `;

@@ -4,7 +4,8 @@ export const initialState = {
   appointments: [],
 };
 
-export const UserReducer = (state, action) = {
+// Meu reducer
+export const UserReducer = (state, action) => {
   switch (action.type) {
     // possibilita trocar avatar
     case 'setAvatar':
