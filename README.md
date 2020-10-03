@@ -6,6 +6,8 @@ Aplicativo para barbearia
 
 [Git do projeto](https://github.com/ederpbj/devbarber)
 
+[Prototipagem com Adobe XD](https://www.youtube.com/watch?v=29QgSGxoqbU&list=PLzvyjJBWFAEnF0g9gz1DsKm2UZbqsALG9&index=2&ab_channel=DanielR.C.-AdobeTutoriais)
+
 Iniciando Projeto
 `npx react-native init app`
 
