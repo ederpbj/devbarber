@@ -17,22 +17,29 @@ import {
 // import EmailIcon from '../../assets/email.svg';
 // import LockIcon from '../../assets/lock.svg';
 
+import SignInput from '../../components/SignInput';
+
 import BarberLogo from '../../assets/barber.svg';
+
+import EmailIcon from '../../assets/email.svg';
+import LockIcon from '../../assets/lock.svg';
+
 
 export default () => (
   <Container>
     <BarberLogo width="100%" height="160" />
-     <InputArea>
-                
+    <InputArea>
+      <SignInput IconSvg={EmailIcon}/>
+      <SignInput IconSvg={LockIcon}/>
 
-                <CustomButton >
-                    <CustomButtonText>LOGIN</CustomButtonText>
-                </CustomButton>
-            </InputArea>
+      <CustomButton >
+        <CustomButtonText>LOGIN</CustomButtonText>
+      </CustomButton>
+    </InputArea>
 
-            <SignMessageButton >
-                <SignMessageButtonText>Ainda não possui uma conta?</SignMessageButtonText>
-                <SignMessageButtonTextBold>Cadastre-se</SignMessageButtonTextBold>
-            </SignMessageButton>
+    <SignMessageButton >
+      <SignMessageButtonText>Ainda não possui uma conta?</SignMessageButtonText>
+      <SignMessageButtonTextBold>Cadastre-se</SignMessageButtonTextBold>
+    </SignMessageButton>
   </Container>
 );

@@ -13,7 +13,9 @@ export const LoginIcon = styled.ActivityIndicator`
 `;
 
 export const InputArea = styled.View`
+  width: 100%;
   padding: 40px;
+  background-color: #FF0000;
 `;
 
 export const CustomButton = styled.TouchableOpacity`
