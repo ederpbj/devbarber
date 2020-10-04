@@ -4,6 +4,8 @@ Aplicativo para barbearia
 
 [Live 10](https://alunos.b7web.com.br/curso/lives/app-de-agendamento-para-barbeiros)
 
+tempo parado: 1:21:30
+
 [Git do projeto](https://github.com/ederpbj/devbarber)
 
 [Prototipagem com Adobe XD](https://www.youtube.com/watch?v=29QgSGxoqbU&list=PLzvyjJBWFAEnF0g9gz1DsKm2UZbqsALG9&index=2&ab_channel=DanielR.C.-AdobeTutoriais)
@@ -93,5 +95,11 @@ Criando SVG com Inskscape
 
 [vscode settings](https://www.npmjs.com/package/react-native-vscode-settings)
 
+### Passos
 
-tempo parado: 1:05:30
+* Criar app
+* Criar src/stack/MainStack
+* Criar Telas 
+   * src/screens/Preload
+      * index.js
+      * styles.js
