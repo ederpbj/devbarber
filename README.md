@@ -103,3 +103,10 @@ Criando SVG com Inskscape
    * src/screens/Preload
       * index.js
       * styles.js
+   * src/screens/SignIn
+      * index.js
+      * styles.js
+   * src/screens/SignUp
+      * index.js
+      * styles.js
+* importar no stack

@@ -10,12 +10,15 @@ import BarberLogo from '../../assets/barber.svg';
 
 export default () => {
   const {dispatch: userDispatch} = useContext(UserContext);
+  // navegador
   const navigation = useNavigation();
 
   useEffect(() => {
     const checkToken = async () => {
+      // Pega o token salvo no app
       const token = await AsyncStorage.getItem('token');
       if (token) {
+        // Validar token
         let res = await Api.checkToken(token);
         if (res.token) {
           await AsyncStorage.setItem('token', res.token);
