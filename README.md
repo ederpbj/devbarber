@@ -4,7 +4,7 @@ Aplicativo para barbearia
 
 [Live 10](https://alunos.b7web.com.br/curso/lives/app-de-agendamento-para-barbeiros)
 
-tempo parado: 1:21:30
+tempo parado: 1:40:30
 
 [Git do projeto](https://github.com/ederpbj/devbarber)
 
@@ -139,3 +139,5 @@ Criando SVG com Inskscape
    * stacks
       * MainStack.js
          * (Controle de telas)
+   * api
+      * (para fazer requisições)
