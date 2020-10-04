@@ -109,4 +109,33 @@ Criando SVG com Inskscape
    * src/screens/SignUp
       * index.js
       * styles.js
-* importar no stack
+* app
+   * (Inicio)
+* src
+   * assets
+      * (Imagens svg)
+   * compontents
+      * SignInput.js
+         * (Componente de tela)
+   * contexts
+      * UserContext.js
+         * (Context)
+   * reducers
+      * UserReducer.js
+         * (Reducer)
+   * screens
+      * Preload
+         * index.js
+         * styles.js
+      * SignIn
+         * index.js
+         * styles.js
+      * SignUp
+         * index.js
+            * (Componentes da tela)
+            * (Funções)
+         * styles.js
+            * (Estilos)
+   * stacks
+      * MainStack.js
+         * (Controle de telas)

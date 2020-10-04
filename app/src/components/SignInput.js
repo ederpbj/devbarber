@@ -11,11 +11,26 @@ const InputArea = styled.View`
    align-items: center;
    margin-bottom: 15px;
 `
-
-export default ({IconSvg}) => {
+// Componentes extras vem das páginas para input
+const Input = styled.TextInput`
+   flex: 1;
+   font-size: 16px;
+   color: #268596;
+   margin-left: 10px;
+`;
+// elementos do component
+export default ({IconSvg, placeholder, value, onChangeText, password}) => {
       return (
          <InputArea>
-            <IconSvg width="24" height="24" fill="" />
+            <IconSvg width="24" height="24" fill="#268596" />
+
+            <Input 
+               placeholder={placeholder}
+               placeholderTextColor="#268"
+               value={value}
+               onChangeText={onChangeText}
+               secureTextEntry={password}
+            />
          </InputArea>
       );
 }
