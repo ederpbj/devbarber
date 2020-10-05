@@ -2,14 +2,14 @@ import React, {useEffect, useContext} from 'react';
 import {Container, LoadingIcon} from './styles';
 import AsyncStorage from '@react-native-community/async-storage';
 import {useNavigation} from '@react-navigation/native';
-
 import {UserContext} from '../../contexts/UserContext';
-// import Api from '../../Api';
+import Api from '../../Api';
 
 import BarberLogo from '../../assets/barber.svg';
 
 export default () => {
   const {dispatch: userDispatch} = useContext(UserContext);
+  
   // navegador
   const navigation = useNavigation();
 
@@ -18,8 +18,9 @@ export default () => {
       // Pega o token salvo no app
       const token = await AsyncStorage.getItem('token');
       if (token) {
-        // Validar token
+        // Validar token, mando meu token
         let res = await Api.checkToken(token);
+        // verifica se mandou novo token
         if (res.token) {
           await AsyncStorage.setItem('token', res.token);
 

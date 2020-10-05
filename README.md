@@ -98,18 +98,8 @@ Criando SVG com Inskscape
 ### Passos
 
 * Criar app
-* Criar src/stack/MainStack
-* Criar Telas 
-   * src/screens/Preload
-      * index.js
-      * styles.js
-   * src/screens/SignIn
-      * index.js
-      * styles.js
-   * src/screens/SignUp
-      * index.js
-      * styles.js
-* app
+
+* app.js
    * (Inicio)
 * src
    * assets
@@ -139,5 +129,6 @@ Criando SVG com Inskscape
    * stacks
       * MainStack.js
          * (Controle de telas)
-   * api
-      * (para fazer requisições)
+   * api.js
+      * (API para fazer requisições)
+

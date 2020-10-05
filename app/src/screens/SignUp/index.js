@@ -1,5 +1,12 @@
 import React, {useState} from 'react';
 import {useNavigation} from '@react-navigation/native';
+// Salva no storage
+import AsyncStorage from '@react-native-community/async-storage';
+
+// usar context
+import { UserContext } from '../../contexts/UserContext';
+
+
 import {
   Container,
   InputArea,
@@ -10,7 +17,9 @@ import {
   SignMessageButtonTextBold,
 } from './styles';
 
-// import Api from '../../Api';
+// Api
+import Api from '../../Api';
+
 // Componente de input
 import SignInput from '../../components/SignInput';
 // Logos svg
@@ -20,6 +29,9 @@ import LockIcon from '../../assets/lock.svg';
 import PersonIcon from '../../assets/person.svg';
 
 export default () => {
+  // Criação do dispatch
+  const { dispatch: useDispatch } = useContext(UserContext);
+
   const navigation = useNavigation();
 
   // Capturando valores digitados em value
@@ -29,7 +41,36 @@ export default () => {
   const [passwordField, setPasswordField] = useState('');
 
   // Botões clicaveis
-  const handleSignClick = () => {};
+  const handleSignClick = async () => {
+    if(nameField != '' && emailField != '' && passwordField != ''){
+      let res = await Api.signUp(nameField, emailField, passwordField);
+      // console.log(res);
+
+      // tem token?
+      if(res.token){
+        // alert("DEU CERTO");
+        await AsyncStorage.setItem('token', res.token);
+
+        // Salvar no meu context
+        userDispatch({
+          type: 'setAvatar',
+          payload: {
+            avatar: res.data.avatar,
+          },
+        });
+
+        //Não permite voltar, reseta posição, manda para MainTap
+        navigation.reset({
+          routes: [{name: 'MainTap'}],
+        });
+
+      }else {
+        alert("Error: "+res.error);
+      }
+    }else{
+      alert("Preencha os campos!");
+    }
+  };
 
   const handleMessageButtonClick = () => {
     navigation.reset({
