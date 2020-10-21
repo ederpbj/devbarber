@@ -26,8 +26,8 @@ import EmailIcon from '../../assets/email.svg';
 import LockIcon from '../../assets/lock.svg';
 
 export default () => {
-  // dispach: manda informações para context
-  const {dispatch: useDispatch} = useContext(UserContext);
+  // dispach: manda informações para context, renomeia para userDispatch
+  const { dispatch: userDispatch } = useContext(UserContext);
   const navigation = useNavigation();
 
   // Capturando valores digitados em value
@@ -40,15 +40,18 @@ export default () => {
     if (emailField != '' && passwordField != '') {
       // Recebendo resposta da api
       let json = await Api.signIn(emailField, passwordField);
-      console.log(json);
+      // console.log(json);
 
       // Se vier o token, deu tudo certo
       if (json.token) {
+        // Passo 1, grava no storage
         // alert("Deu certo!");
         // Salva no async o token
         await AsyncStorage.setItem('token', json.token);
 
+        // Passo 2, salva no dispatch
         // Salvar no meu context
+        // Ver ação no reducer
         userDispatch({
           type: 'setAvatar',
           payload: {
@@ -56,10 +59,12 @@ export default () => {
           }
         });
 
+        // Passo 3, manda para MainTap
         //Não permite voltar, reseta posição, manda para MainTap
         navigation.reset({
           routes: [{name: 'MainTap'}]
         })
+        // Login feito com sucesso!
 
       } else {
         alert('E-mail e/ou senha errados!');

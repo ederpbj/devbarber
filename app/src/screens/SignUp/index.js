@@ -1,11 +1,10 @@
-import React, {useState} from 'react';
+import React, { useState, useContext } from 'react';
 import {useNavigation} from '@react-navigation/native';
 // Salva no storage
 import AsyncStorage from '@react-native-community/async-storage';
 
 // usar context
 import { UserContext } from '../../contexts/UserContext';
-
 
 import {
   Container,
@@ -30,8 +29,8 @@ import PersonIcon from '../../assets/person.svg';
 
 export default () => {
   // Criação do dispatch
-  const { dispatch: useDispatch } = useContext(UserContext);
-
+  
+  const { dispatch: userDispatch } = useContext(UserContext);
   const navigation = useNavigation();
 
   // Capturando valores digitados em value
@@ -45,6 +44,8 @@ export default () => {
     if(nameField != '' && emailField != '' && passwordField != ''){
       let res = await Api.signUp(nameField, emailField, passwordField);
       // console.log(res);
+    
+      console.log('XXXXXXX');
 
       // tem token?
       if(res.token){
@@ -63,6 +64,8 @@ export default () => {
         navigation.reset({
           routes: [{name: 'MainTap'}],
         });
+
+        console.log('====>> Passou!');
 
       }else {
         alert("Error: "+res.error);

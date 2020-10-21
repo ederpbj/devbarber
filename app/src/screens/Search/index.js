@@ -5,7 +5,7 @@ import {Container} from './styles'
 export default () =>{
    return (
       <Container>
-         <Text> textInComponent </Text>
+         <Text> Search </Text>
       </Container>
    )
 }

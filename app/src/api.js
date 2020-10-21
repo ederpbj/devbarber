@@ -1,5 +1,6 @@
 const BASE_API = 'https://api.b7web.com.br/devbarber/api';
 
+// api: responsável pelas requisições para backend
 export default {
   // metodo fetch
   // pode usar axios para facilitar
@@ -18,6 +19,7 @@ export default {
     return json;
   },
 
+  // Recebo email e senha
   signIn: async (email, password) => {
     // console.log("URL", `${BASE_API}/auth/login`);
     // console.log("BODY", JSON.stringify({email, password}));
@@ -29,9 +31,11 @@ export default {
     const req = await fetch(`${BASE_API}/auth/login`, {
       method: 'POST',
       headers: {
+        // Aceita tipo json
         Accept: 'application/json',
         'Content-Type': 'application/json',
       },
+      // Conteúdo que estou mandando, email e senha
       body: JSON.stringify({ email, password }),
     });
     // gera json

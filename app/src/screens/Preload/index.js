@@ -22,6 +22,7 @@ export default () => {
         let res = await Api.checkToken(token);
         // verifica se mandou novo token
         if (res.token) {
+          // igual ao SignIn
           await AsyncStorage.setItem('token', res.token);
 
           userDispatch({

@@ -1,13 +1,13 @@
 export const initialState = {
   avatar: '',
   favorites: [],
-  appointments: [],
+  appointments: []
 };
 
 // Meu reducer
 export const UserReducer = (state, action) => {
+  // possibilita trocar avatar
   switch (action.type) {
-    // possibilita trocar avatar
     case 'setAvatar':
       return { ...state, avatar: action.payload.avatar };
       break;
